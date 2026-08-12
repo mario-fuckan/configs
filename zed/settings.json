@@ -1,0 +1,89 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "prettier": {
+    "allowed": true,
+  },
+  "format_on_save": "on",
+  "icon_theme": "Material Icon Theme",
+  "disable_ai": true,
+  "terminal": {
+    "shell": "system",
+  },
+  "cursor_shape": "bar",
+  "text_rendering_mode": "platform_default",
+  "ui_font_weight": 500.0,
+  "ui_font_family": "Fira Code",
+  "buffer_line_height": "comfortable",
+  "buffer_font_weight": 400.0,
+  "buffer_font_family": "Fira Code",
+  "edit_predictions": {
+    "provider": "zed",
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "base_keymap": "VSCode",
+  "ui_font_size": 16.0,
+  "buffer_font_size": 16.0,
+  "buffer_font_features": {
+    "calt": true,
+  },
+  "theme": "GitHub Dark",
+  "languages": {
+    "TypeScript": {
+      "language_servers": ["!typescript-language-server", "..."],
+      "formatter": "language_server",
+    },
+    "Svelte": {
+      "language_servers": ["!eslint", "..."],
+      "formatter": "language_server",
+    },
+    "CSharp": {
+      "language_servers": ["csharp-ls", "!roslyn", "!omnisharp", "..."],
+      "formatter": "language_server",
+    },
+    "Luau": {
+      "formatter": {
+        "external": {
+          "command": "stylua",
+          "arguments": ["-"],
+        },
+      },
+    },
+  },
+  "lsp": {
+    "csharp-ls": {
+      "settings": {
+        "analyzersEnabled": true,
+      },
+    },
+  },
+}
