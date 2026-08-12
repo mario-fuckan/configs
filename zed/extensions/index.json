@@ -1,0 +1,1567 @@
+{
+    "extensions": {
+        "csharp": {
+            "manifest": {
+                "id": "csharp",
+                "name": "C#",
+                "version": "1.2.1",
+                "schema_version": 1,
+                "description": "C# support.",
+                "repository": "https://github.com/zed-extensions/csharp",
+                "authors": [
+                    "fminkowski <fminkowski@gmail.com>",
+                    "Fabian Freimueller <fabianfreimueller@gmail.com>"
+                ],
+                "lib": {
+                    "kind": "Rust",
+                    "version": "0.7.0"
+                },
+                "themes": [],
+                "icon_themes": [],
+                "languages": [
+                    "languages/csharp",
+                    "languages/slnx",
+                    "languages/msbuild",
+                    "languages/csproj"
+                ],
+                "grammars": {
+                    "c_sharp": {
+                        "repository": "https://github.com/tree-sitter/tree-sitter-c-sharp",
+                        "rev": "485f0bae0274ac9114797fc10db6f7034e4086e3",
+                        "path": null
+                    },
+                    "xml": {
+                        "repository": "https://github.com/tree-sitter-grammars/tree-sitter-xml",
+                        "rev": "863dbc381f44f6c136a399e684383b977bb2beaa",
+                        "path": "xml"
+                    }
+                },
+                "language_servers": {
+                    "csharp-ls": {
+                        "language": "CSharp",
+                        "languages": [],
+                        "language_ids": {},
+                        "code_action_kinds": null
+                    },
+                    "omnisharp": {
+                        "language": "CSharp",
+                        "languages": [],
+                        "language_ids": {},
+                        "code_action_kinds": null
+                    },
+                    "roslyn": {
+                        "language": "CSharp",
+                        "languages": [],
+                        "language_ids": {},
+                        "code_action_kinds": null
+                    }
+                },
+                "context_servers": {},
+                "slash_commands": {},
+                "snippets": null,
+                "capabilities": []
+            },
+            "dev": false
+        },
+        "discord-presence": {
+            "manifest": {
+                "id": "discord-presence",
+                "name": "Discord Presence",
+                "version": "0.2.4",
+                "schema_version": 1,
+                "description": "Presence for your beautiful discord account :)",
+                "repository": "https://github.com/xhyrom/zed-discord-presence",
+                "authors": ["Jozef Steinhübl <contact@xhyrom.dev>"],
+                "lib": {
+                    "kind": "Rust",
+                    "version": "0.7.0"
+                },
+                "themes": [],
+                "icon_themes": [],
+                "languages": [],
+                "grammars": {},
+                "language_servers": {
+                    "discord_presence": {
+                        "language": null,
+                        "languages": [
+                            "ActionScript",
+                            "Ada",
+                            "Agda",
+                            "Aiken",
+                            "Amber",
+                            "Ansible",
+                            "AsciiDoc",
+                            "Assembly",
+                            "Astro",
+                            "AWK",
+                            "Shell Script",
+                            "Beancount",
+                            "Bend",
+                            "bitbake",
+                            "Blade",
+                            "Blueprint",
+                            "BQN",
+                            "Brainfuck",
+                            "C3",
+                            "Caddyfile",
+                            "Cadence",
+                            "Cairo",
+                            "Cap'n Proto",
+                            "Cedar",
+                            "CFEngine",
+                            "cfhtml",
+                            "cfml",
+                            "cfscript",
+                            "Clojure",
+                            "COBOL",
+                            "CONL",
+                            "Cooklang",
+                            "Cpp2",
+                            "Crystal",
+                            "ECR",
+                            "CSV",
+                            "Gherkin",
+                            "CUE",
+                            "Curry",
+                            "Cylc",
+                            "Cypher",
+                            "Cython",
+                            "D",
+                            "D2",
+                            "Dafny",
+                            "Dart",
+                            "DBML",
+                            "devicetree",
+                            "Docker Compose",
+                            "Dockerfile",
+                            "DuckyScript",
+                            "Earthfile",
+                            "EDI X12",
+                            "EJS",
+                            "Elisp",
+                            "Elm",
+                            "Handlebars",
+                            "env",
+                            "Exograph",
+                            "Firebase Rules",
+                            "Fish",
+                            "FlatBuffers",
+                            "Fortran",
+                            "Fountain",
+                            "FSharp",
+                            "GDScript",
+                            "Godot Resource",
+                            "Gemini",
+                            "Diff",
+                            "Git Attributes",
+                            "Git Commit",
+                            "Git Config",
+                            "Git Ignore",
+                            "Git Rebase",
+                            "Gleam",
+                            "Go Sum",
+                            "GraphQL",
+                            "DOT",
+                            "Gren",
+                            "Groovy",
+                            "GROQ",
+                            "Haml",
+                            "Hare",
+                            "Haxe",
+                            "Helm",
+                            "HLSL",
+                            "http",
+                            "Hurl",
+                            "iCal",
+                            "Idris2",
+                            "IPKG",
+                            "Inform 6",
+                            "ini",
+                            "ISLE",
+                            "Janet",
+                            "Java",
+                            "Properties",
+                            "Jinja2",
+                            "Jsonnet",
+                            "Julia",
+                            "Just",
+                            "Kconfig",
+                            "Kdl",
+                            "Kotlin",
+                            "BibTeX",
+                            "LaTeX",
+                            "Ledger",
+                            "LESS",
+                            "LilyPond",
+                            "LilyPond Scheme",
+                            "Liquid",
+                            "LOG",
+                            "Lox",
+                            "Luau",
+                            "Make",
+                            "MATLAB",
+                            "",
+                            "Move",
+                            "move",
+                            "Navi",
+                            "Navi Stream",
+                            "CMake",
+                            "Nginx",
+                            "Nickel",
+                            "Nim",
+                            "Nim Format String",
+                            "Nix",
+                            "Noir",
+                            "Nu",
+                            "Dune",
+                            "OCaml Interface",
+                            "OCaml",
+                            "Odin",
+                            "OMNeT++ MSG",
+                            "OMNeT++ NED",
+                            "OpenSCAD",
+                            "Org",
+                            "Pact",
+                            "Path of Exile Filter",
+                            "Perl",
+                            "Perm",
+                            "Pest",
+                            "PHP",
+                            "PHPDoc",
+                            "pica200",
+                            "Pkl",
+                            "PlantUML",
+                            "Animation.txt",
+                            "Pdxinfo",
+                            "PowerShell",
+                            "Prisma",
+                            "Prolog",
+                            "Pug",
+                            "QML",
+                            "QuakeC",
+                            "R",
+                            "Racket",
+                            "Rainbow CSV",
+                            "Rainbow TSV",
+                            "RCL",
+                            "rego",
+                            "ReScript",
+                            "Rhai",
+                            "Roc",
+                            "RON",
+                            "RPM Spec",
+                            "reST",
+                            "ERB",
+                            "RBS",
+                            "Ruby",
+                            "SageMath",
+                            "Scala",
+                            "Scheme",
+                            "SCSS",
+                            "Simula",
+                            "Slim",
+                            "Smithy",
+                            "Standard ML",
+                            "Snakemake",
+                            "Solidity",
+                            "Sourcepawn",
+                            "SQL",
+                            "SSH Config",
+                            "Stan",
+                            "bazelrc",
+                            "Starlark",
+                            "Strace",
+                            "Surreal Query Language",
+                            "Svelte",
+                            "Swift",
+                            "Templ",
+                            "Tera (CSS)",
+                            "Tera (HTML)",
+                            "Tera (JSON)",
+                            "Tera (TOML)",
+                            "Tera (YAML)",
+                            "Tera",
+                            "tmux",
+                            "Tree-sitter Query",
+                            "Twig",
+                            "Typst",
+                            "Unison",
+                            "V",
+                            "Vala",
+                            "vCard",
+                            "Vento",
+                            "Verilog",
+                            "VHDL",
+                            "VHS",
+                            "VRL",
+                            "Vue.js",
+                            "WebAssembly Text Format",
+                            "WDL",
+                            "Wgsl",
+                            "whkd",
+                            "WIT",
+                            "XML",
+                            "Yara",
+                            "ziggy-schema",
+                            "ziggy",
+                            "C",
+                            "C++",
+                            "CSS",
+                            "Go",
+                            "Go Mod",
+                            "Go Work",
+                            "JavaScript",
+                            "JSDoc",
+                            "JSON",
+                            "JSONC",
+                            "Markdown-Inline",
+                            "Markdown",
+                            "Python",
+                            "Regex",
+                            "Rust",
+                            "TSX",
+                            "TypeScript",
+                            "YAML",
+                            "CSharp",
+                            "Elixir",
+                            "HEEX",
+                            "Erlang",
+                            "GLSL",
+                            "Haskell",
+                            "HTML",
+                            "Lua",
+                            "Proto",
+                            "PureScript",
+                            "HCL",
+                            "Terraform Vars",
+                            "Terraform",
+                            "TOML",
+                            "Uiua",
+                            "Zig",
+                            "edge"
+                        ],
+                        "language_ids": {
+                            "cfhtml": "cfhtml",
+                            "Bend": "bend",
+                            "GDScript": "gdscript",
+                            "OCaml": "ocaml",
+                            "Assembly": "asm",
+                            "DBML": "dbml",
+                            "TSX": "tsx",
+                            "VHDL": "vhdl",
+                            "ISLE": "isle",
+                            "Ledger": "ledger",
+                            "PlantUML": "plantuml",
+                            "SSH Config": "ssh_config",
+                            "pica200": "pica200",
+                            "Gemini": "gemini",
+                            "Wgsl": "wgsl",
+                            "Handlebars": "glimmer",
+                            "Godot Resource": "godot_resource",
+                            "LilyPond": "lilypond",
+                            "Prolog": "prolog",
+                            "cfml": "cfml",
+                            "Make": "make",
+                            "Standard ML": "sml",
+                            "Dafny": "dafny",
+                            "CMake": "cmake",
+                            "Amber": "amber",
+                            "Exograph": "exograph",
+                            "Jsonnet": "jsonnet",
+                            "RON": "ron",
+                            "Dune": "dune",
+                            "Proto": "proto",
+                            "Cylc": "cylc",
+                            "CUE": "cue",
+                            "RBS": "rbs",
+                            "Hurl": "hurl",
+                            "D": "d",
+                            "Cap'n Proto": "capnp",
+                            "ECR": "ecr",
+                            "Go Sum": "gosum",
+                            "Caddyfile": "caddyfile",
+                            "Clojure": "clojure",
+                            "DOT": "dot",
+                            "Git Attributes": "gitattributes",
+                            "Cadence": "cadence",
+                            "LilyPond Scheme": "lilypond_scheme",
+                            "Path of Exile Filter": "poe-filter",
+                            "GraphQL": "graphql",
+                            "AWK": "awk",
+                            "Brainfuck": "brainfuck",
+                            "Liquid": "liquid",
+                            "Pest": "pest",
+                            "iCal": "vcard",
+                            "CONL": "conl",
+                            "Kconfig": "kconfig",
+                            "CSS": "css",
+                            "Hare": "hare",
+                            "reST": "rst",
+                            "FSharp": "fsharp",
+                            "Tera": "tera",
+                            "ini": "ini",
+                            "QuakeC": "quakec",
+                            "Crystal": "crystal",
+                            "Cpp2": "cpp2",
+                            "Inform 6": "inform6",
+                            "BibTeX": "bibtex",
+                            "HCL": "hcl",
+                            "DuckyScript": "duckyscript",
+                            "Pug": "pug",
+                            "Astro": "astro",
+                            "Docker Compose": "docker-compose",
+                            "Svelte": "svelte",
+                            "Nix": "nix",
+                            "WIT": "wit",
+                            "Firebase Rules": "firebase-security-rules",
+                            "JSON": "json",
+                            "Kotlin": "kotlin",
+                            "Earthfile": "earthfile",
+                            "Nu": "nu",
+                            "cfscript": "cfscript",
+                            "Kdl": "kdl",
+                            "PowerShell": "powershell",
+                            "Regex": "regex",
+                            "Properties": "properties",
+                            "Swift": "swift",
+                            "Markdown": "markdown",
+                            "Go Work": "gowork",
+                            "LESS": "less",
+                            "Julia": "julia",
+                            "Fountain": "fountain",
+                            "Yara": "yara",
+                            "Prisma": "prisma",
+                            "rego": "rego",
+                            "BQN": "BQN",
+                            "Ansible": "ansible",
+                            "Cython": "cython",
+                            "Pdxinfo": "pdxinfo",
+                            "Jinja2": "jinja2",
+                            "Idris2": "idris2",
+                            "Twig": "twig",
+                            "Blueprint": "blueprint",
+                            "IPKG": "ipkg",
+                            "C++": "cpp",
+                            "Stan": "stan",
+                            "JSONC": "jsonc",
+                            "CSharp": "csharp",
+                            "Erlang": "erlang",
+                            "VHS": "vhs",
+                            "Luau": "luau",
+                            "Vala": "vala",
+                            "HLSL": "hlsl",
+                            "Sourcepawn": "sourcepawn",
+                            "Go Mod": "gomod",
+                            "YAML": "yaml",
+                            "Markdown-Inline": "markdown-inline",
+                            "Lua": "lua",
+                            "Solidity": "solidity",
+                            "Rhai": "rhai",
+                            "devicetree": "devicetree",
+                            "WebAssembly Text Format": "wat",
+                            "XML": "xml",
+                            "Agda": "agda",
+                            "Gherkin": "gherkin",
+                            "Nim": "nim",
+                            "Rainbow TSV": "tsv",
+                            "HTML": "html",
+                            "Git Commit": "gitcommit",
+                            "LaTeX": "latex",
+                            "C3": "c3",
+                            "ActionScript": "actionscript",
+                            "VRL": "vrl",
+                            "Git Ignore": "gitignore",
+                            "Dockerfile": "dockerfile",
+                            "move": "move",
+                            "Slim": "slim",
+                            "Tera (HTML)": "tera-html",
+                            "ziggy": "ziggy",
+                            "Ada": "ada",
+                            "CFEngine": "cfengine",
+                            "Snakemake": "snakemake",
+                            "Terraform": "terraform",
+                            "SCSS": "scss",
+                            "Cooklang": "cooklang",
+                            "Move": "move",
+                            "Dart": "dart",
+                            "Navi": "navi",
+                            "RPM Spec": "rpmspec",
+                            "bazelrc": "bazelrc",
+                            "Templ": "templ",
+                            "": "mermaid",
+                            "ERB": "erb",
+                            "Cairo": "cairo",
+                            "GROQ": "groq",
+                            "OMNeT++ NED": "ned",
+                            "Fish": "fish",
+                            "SageMath": "sage",
+                            "Unison": "unison",
+                            "Haml": "haml",
+                            "Gleam": "gleam",
+                            "Tera (CSS)": "tera-css",
+                            "Diff": "diff",
+                            "R": "r",
+                            "Scala": "scala",
+                            "Nickel": "nickel",
+                            "Vue.js": "vue",
+                            "FlatBuffers": "flatbuffers",
+                            "Nim Format String": "nim_format_string",
+                            "Perl": "perl",
+                            "PHPDoc": "phpdoc",
+                            "Go": "go",
+                            "Beancount": "beancount",
+                            "Rust": "rust",
+                            "GLSL": "glsl",
+                            "Terraform Vars": "terraform-vars",
+                            "Haskell": "haskell",
+                            "EJS": "ejs",
+                            "Shell Script": "bash",
+                            "Helm": "helm",
+                            "Smithy": "smithy",
+                            "RCL": "rcl",
+                            "Scheme": "scheme",
+                            "MATLAB": "matlab",
+                            "Tree-sitter Query": "query",
+                            "Starlark": "starlark",
+                            "C": "c",
+                            "http": "http",
+                            "ReScript": "rescript",
+                            "Fortran": "fortran",
+                            "Cypher": "cypher",
+                            "Rainbow CSV": "csv",
+                            "Elm": "elm",
+                            "Roc": "roc",
+                            "OCaml Interface": "ocaml-interface",
+                            "LOG": "log",
+                            "Just": "just",
+                            "JavaScript": "javascript",
+                            "COBOL": "cobol",
+                            "Java": "java",
+                            "CSV": "csv",
+                            "Curry": "curry",
+                            "Lox": "lox",
+                            "tmux": "tmux",
+                            "PureScript": "purescript",
+                            "Git Config": "gitconfig",
+                            "SQL": "sql",
+                            "bitbake": "bitbake",
+                            "OMNeT++ MSG": "msg",
+                            "Org": "org",
+                            "Typst": "typst",
+                            "JSDoc": "jsdoc",
+                            "TOML": "toml",
+                            "D2": "d2",
+                            "PHP": "php",
+                            "Tera (TOML)": "tera-toml",
+                            "Python": "python",
+                            "Git Rebase": "gitrebase",
+                            "QML": "qml",
+                            "Haxe": "haxe",
+                            "Zig": "zig",
+                            "Tera (JSON)": "tera-json",
+                            "Elixir": "elixir",
+                            "Ruby": "ruby",
+                            "V": "v",
+                            "Pact": "pact",
+                            "Blade": "blade",
+                            "EDI X12": "edi-x12",
+                            "vCard": "vcard",
+                            "Perm": "perm",
+                            "Groovy": "groovy",
+                            "Animation.txt": "animationtxt",
+                            "Nginx": "nginx",
+                            "Simula": "simula",
+                            "Strace": "strace",
+                            "whkd": "whkd",
+                            "Elisp": "elisp",
+                            "Tera (YAML)": "tera-yaml",
+                            "OpenSCAD": "openscad",
+                            "Pkl": "pkl",
+                            "WDL": "wdl",
+                            "HEEX": "heex",
+                            "Noir": "noir",
+                            "Navi Stream": "navi_stream",
+                            "Verilog": "verilog",
+                            "edge": "edge",
+                            "Aiken": "aiken",
+                            "Gren": "gren",
+                            "Odin": "odin",
+                            "TypeScript": "typescript",
+                            "Racket": "racket",
+                            "AsciiDoc": "asciidoc",
+                            "ziggy-schema": "ziggy-schema",
+                            "Uiua": "uiua",
+                            "Surreal Query Language": "surql",
+                            "env": "env",
+                            "Vento": "vento",
+                            "Cedar": "cedar",
+                            "Janet": "janet"
+                        },
+                        "code_action_kinds": null
+                    }
+                },
+                "context_servers": {},
+                "slash_commands": {},
+                "snippets": null,
+                "capabilities": []
+            },
+            "dev": false
+        },
+        "dockerfile": {
+            "manifest": {
+                "id": "dockerfile",
+                "name": "Dockerfile",
+                "version": "0.2.1",
+                "schema_version": 1,
+                "description": "Dockerfile support.",
+                "repository": "https://github.com/zed-extensions/dockerfile",
+                "authors": [
+                    "d1y <chenhonzho@gmail.com>",
+                    "joshmeads <github@joshmeads.com>"
+                ],
+                "lib": {
+                    "kind": "Rust",
+                    "version": "0.7.0"
+                },
+                "themes": [],
+                "icon_themes": [],
+                "languages": ["languages/dockerfile"],
+                "grammars": {
+                    "dockerfile": {
+                        "repository": "https://github.com/camdencheek/tree-sitter-dockerfile",
+                        "rev": "868e44ce378deb68aac902a9db68ff82d2299dd0",
+                        "path": null
+                    }
+                },
+                "language_servers": {
+                    "docker-language-server": {
+                        "language": "Dockerfile",
+                        "languages": ["Dockerfile", "Docker Compose"],
+                        "language_ids": {
+                            "Dockerfile": "dockerfile",
+                            "Docker Compose": "docker-compose"
+                        },
+                        "code_action_kinds": null
+                    },
+                    "dockerfile-language-server": {
+                        "language": "Dockerfile",
+                        "languages": [],
+                        "language_ids": {},
+                        "code_action_kinds": null
+                    }
+                },
+                "context_servers": {},
+                "slash_commands": {},
+                "snippets": null,
+                "capabilities": [],
+                "debug_adapters": {
+                    "buildx-dockerfile": {
+                        "schema_path": "debug_adapter_schemas/buildx-dockerfile.json"
+                    }
+                }
+            },
+            "dev": false
+        },
+        "editorconfig": {
+            "manifest": {
+                "id": "editorconfig",
+                "name": "Editorconfig",
+                "version": "0.1.0",
+                "schema_version": 1,
+                "description": "Editorconfig language support for Zed.",
+                "repository": "https://github.com/notpeter/editorconfig-zed",
+                "authors": ["Peter Tripp <petertripp@gmail.com>"],
+                "lib": {
+                    "kind": null,
+                    "version": null
+                },
+                "themes": [],
+                "icon_themes": [],
+                "languages": ["languages/editorconfig"],
+                "grammars": {
+                    "editorconfig": {
+                        "repository": "https://github.com/ValdezFOmar/tree-sitter-editorconfig",
+                        "rev": "439a3fcdbf239db35f587936a36f48b704ba8357",
+                        "path": null
+                    }
+                },
+                "language_servers": {},
+                "context_servers": {},
+                "slash_commands": {},
+                "snippets": null,
+                "capabilities": []
+            },
+            "dev": false
+        },
+        "emmet": {
+            "manifest": {
+                "id": "emmet",
+                "name": "Emmet",
+                "version": "0.0.13",
+                "schema_version": 1,
+                "description": "Emmet support",
+                "repository": "https://github.com/zed-extensions/emmet",
+                "authors": ["Piotr Osiewicz <piotr@zed.dev>"],
+                "lib": {
+                    "kind": "Rust",
+                    "version": "0.7.0"
+                },
+                "themes": [],
+                "icon_themes": [],
+                "languages": [],
+                "grammars": {},
+                "language_servers": {
+                    "emmet-language-server": {
+                        "language": null,
+                        "languages": [
+                            "Angular",
+                            "Blade",
+                            "CSS",
+                            "Django",
+                            "ERB",
+                            "Elixir",
+                            "HEEx",
+                            "HTML",
+                            "HTML+ERB",
+                            "JavaScript",
+                            "Jinja2",
+                            "LESS",
+                            "Liquid",
+                            "Nunjucks",
+                            "PHP",
+                            "SCSS",
+                            "Statamic Antlers",
+                            "TSX",
+                            "Vue.js"
+                        ],
+                        "language_ids": {
+                            "SCSS": "scss",
+                            "Blade": "blade",
+                            "HTML+ERB": "eruby",
+                            "HTML": "html",
+                            "Nunjucks": "html",
+                            "ERB": "eruby",
+                            "CSS": "css",
+                            "LESS": "less",
+                            "PHP": "php",
+                            "HEEx": "heex",
+                            "TSX": "typescriptreact",
+                            "Django": "html",
+                            "Jinja2": "html",
+                            "Statamic Antlers": "html",
+                            "JavaScript": "javascriptreact",
+                            "Elixir": "elixir",
+                            "Liquid": "html",
+                            "Vue.js": "vue",
+                            "Angular": "angular"
+                        },
+                        "code_action_kinds": null
+                    }
+                },
+                "context_servers": {},
+                "slash_commands": {},
+                "snippets": null,
+                "capabilities": []
+            },
+            "dev": false
+        },
+        "git-firefly": {
+            "manifest": {
+                "id": "git-firefly",
+                "name": "Git Firefly",
+                "version": "0.1.9",
+                "schema_version": 1,
+                "description": "Provides Git Syntax Highlighting",
+                "repository": "https://github.com/d1y/git_firefly",
+                "authors": [
+                    "d1y <chenhonzhou@gmail.com>",
+                    "Peter Tripp <petertripp@gmail.com>"
+                ],
+                "lib": {
+                    "kind": null,
+                    "version": null
+                },
+                "themes": [],
+                "icon_themes": [],
+                "languages": [
+                    "languages/gitrebase",
+                    "languages/gitignore",
+                    "languages/gitattributes",
+                    "languages/gitconfig"
+                ],
+                "grammars": {
+                    "git_config": {
+                        "repository": "https://github.com/the-mikedavis/tree-sitter-git-config",
+                        "rev": "3a61756a81a86291a0f48e3eeeaa0692b9981aa9",
+                        "path": null
+                    },
+                    "git_rebase": {
+                        "repository": "https://github.com/the-mikedavis/tree-sitter-git-rebase",
+                        "rev": "39bf3b7566c86ccffd70aaa5105c7c8b76788975",
+                        "path": null
+                    },
+                    "gitattributes": {
+                        "repository": "https://github.com/tree-sitter-grammars/tree-sitter-gitattributes",
+                        "rev": "1b7af09d45b579f9f288453b95ad555f1f431645",
+                        "path": null
+                    },
+                    "gitignore": {
+                        "repository": "https://github.com/shunsambongi/tree-sitter-gitignore",
+                        "rev": "f4685bf11ac466dd278449bcfe5fd014e94aa504",
+                        "path": null
+                    }
+                },
+                "language_servers": {},
+                "context_servers": {},
+                "slash_commands": {},
+                "snippets": null,
+                "capabilities": []
+            },
+            "dev": false
+        },
+        "github-theme": {
+            "manifest": {
+                "id": "github-theme",
+                "name": "Github Theme",
+                "version": "0.1.8",
+                "schema_version": 1,
+                "description": "GitHub themes for Zed",
+                "repository": "https://github.com/PyaeSoneAungRgn/github-zed-theme",
+                "authors": [
+                    "Pyae Sone Aung <pyaesoneaungrgn@gmail.com>",
+                    "Clay Tercek"
+                ],
+                "lib": {
+                    "kind": null,
+                    "version": null
+                },
+                "themes": ["themes/github_theme.json"],
+                "icon_themes": [],
+                "languages": [],
+                "grammars": {},
+                "language_servers": {},
+                "context_servers": {},
+                "slash_commands": {},
+                "snippets": null,
+                "capabilities": []
+            },
+            "dev": false
+        },
+        "html": {
+            "manifest": {
+                "id": "html",
+                "name": "HTML",
+                "version": "0.3.1",
+                "schema_version": 1,
+                "description": "HTML support.",
+                "repository": "https://github.com/zed-industries/zed",
+                "authors": ["Isaac Clayton <slightknack@gmail.com>"],
+                "lib": {
+                    "kind": "Rust",
+                    "version": "0.7.0"
+                },
+                "themes": [],
+                "icon_themes": [],
+                "languages": ["languages/html"],
+                "grammars": {
+                    "html": {
+                        "repository": "https://github.com/tree-sitter/tree-sitter-html",
+                        "rev": "bfa075d83c6b97cd48440b3829ab8d24a2319809",
+                        "path": null
+                    }
+                },
+                "language_servers": {
+                    "vscode-html-language-server": {
+                        "language": "HTML",
+                        "languages": [],
+                        "language_ids": {
+                            "CSS": "css",
+                            "HTML": "html"
+                        },
+                        "code_action_kinds": null
+                    }
+                },
+                "context_servers": {},
+                "slash_commands": {},
+                "snippets": null,
+                "capabilities": []
+            },
+            "dev": false
+        },
+        "lua": {
+            "manifest": {
+                "id": "lua",
+                "name": "Lua",
+                "version": "0.1.10",
+                "schema_version": 1,
+                "description": "Lua support.",
+                "repository": "https://github.com/zed-extensions/lua",
+                "authors": ["Max Brunsfeld <max@zed.dev>"],
+                "lib": {
+                    "kind": "Rust",
+                    "version": "0.7.0"
+                },
+                "themes": [],
+                "icon_themes": [],
+                "languages": ["languages/lua", "languages/emmyluadoc"],
+                "grammars": {
+                    "emmyluadoc": {
+                        "repository": "https://github.com/EmmyLuaLs/tree-sitter-emmyluadoc",
+                        "rev": "ea755c0fd34c07e16597bd62a404d6eba2a3891e",
+                        "path": null
+                    },
+                    "lua": {
+                        "repository": "https://github.com/tree-sitter-grammars/tree-sitter-lua",
+                        "rev": "10fe0054734eec83049514ea2e718b2a56acd0c9",
+                        "path": null
+                    }
+                },
+                "language_servers": {
+                    "lua-language-server": {
+                        "language": null,
+                        "languages": ["Lua", "EmmyLuadoc"],
+                        "language_ids": {},
+                        "code_action_kinds": null
+                    }
+                },
+                "context_servers": {},
+                "slash_commands": {},
+                "snippets": null,
+                "capabilities": []
+            },
+            "dev": false
+        },
+        "luau": {
+            "manifest": {
+                "id": "luau",
+                "name": "Luau",
+                "version": "0.3.8",
+                "schema_version": 1,
+                "description": "Luau support.",
+                "repository": "https://github.com/4teapo/zed-luau",
+                "authors": ["teapo <4teapo@gmail.com>"],
+                "lib": {
+                    "kind": "Rust",
+                    "version": "0.7.0"
+                },
+                "themes": [],
+                "icon_themes": [],
+                "languages": ["languages/luau"],
+                "grammars": {
+                    "luau": {
+                        "repository": "https://github.com/4teapo/tree-sitter-luau",
+                        "rev": "4f09f79945de3d5575b079103d86a515030c62ab",
+                        "path": null
+                    }
+                },
+                "language_servers": {
+                    "luau-lsp": {
+                        "language": "Luau",
+                        "languages": [],
+                        "language_ids": {},
+                        "code_action_kinds": null
+                    }
+                },
+                "context_servers": {},
+                "slash_commands": {},
+                "snippets": null,
+                "capabilities": []
+            },
+            "dev": false
+        },
+        "material-icon-theme": {
+            "manifest": {
+                "id": "material-icon-theme",
+                "name": "Material Icon Theme",
+                "version": "1.3.1",
+                "schema_version": 1,
+                "description": "Material Design icons.",
+                "repository": "https://github.com/zed-extensions/material-icon-theme",
+                "authors": ["Zed Industries <support@zed.dev>"],
+                "lib": {
+                    "kind": null,
+                    "version": null
+                },
+                "themes": [],
+                "icon_themes": ["icon_themes/material-icon-theme.json"],
+                "languages": [],
+                "grammars": {},
+                "language_servers": {},
+                "context_servers": {},
+                "slash_commands": {},
+                "snippets": null,
+                "capabilities": []
+            },
+            "dev": false
+        },
+        "oxc": {
+            "manifest": {
+                "id": "oxc",
+                "name": "Oxc",
+                "version": "0.4.7",
+                "schema_version": 1,
+                "description": "Oxlint and Oxfmt support",
+                "repository": "https://github.com/oxc-project/oxc-zed",
+                "authors": ["Boshen <https://github.com/Boshen>"],
+                "lib": {
+                    "kind": "Rust",
+                    "version": "0.7.0"
+                },
+                "themes": [],
+                "icon_themes": [],
+                "languages": [],
+                "grammars": {},
+                "language_servers": {
+                    "oxfmt": {
+                        "language": "JavaScript",
+                        "languages": [
+                            "JavaScript",
+                            "JSX",
+                            "TypeScript",
+                            "TSX",
+                            "Vue.js",
+                            "JSON",
+                            "JSON5",
+                            "JSONC",
+                            "HTML",
+                            "CSS",
+                            "SCSS",
+                            "Svelte",
+                            "LESS",
+                            "GraphQL",
+                            "Handlebars",
+                            "Markdown",
+                            "MDX",
+                            "YAML",
+                            "TOML"
+                        ],
+                        "language_ids": {
+                            "SCSS": "scss",
+                            "TOML": "toml",
+                            "Svelte": "svelte",
+                            "HTML": "html",
+                            "JSON": "json",
+                            "CSS": "css",
+                            "LESS": "less",
+                            "TSX": "typescriptreact",
+                            "TypeScript": "typescript",
+                            "Handlebars": "handlebars",
+                            "YAML": "yaml",
+                            "JSONC": "jsonc",
+                            "JSX": "javascriptreact",
+                            "JSON5": "json5",
+                            "MDX": "mdx",
+                            "GraphQL": "graphql",
+                            "JavaScript": "javascript",
+                            "Vue.js": "vue",
+                            "Markdown": "markdown"
+                        },
+                        "code_action_kinds": null
+                    },
+                    "oxlint": {
+                        "language": "JavaScript",
+                        "languages": [
+                            "JavaScript",
+                            "JSX",
+                            "TypeScript",
+                            "TSX",
+                            "Vue.js",
+                            "Astro",
+                            "Svelte"
+                        ],
+                        "language_ids": {
+                            "TSX": "typescriptreact",
+                            "TypeScript": "typescript",
+                            "Svelte": "svelte",
+                            "JavaScript": "javascript",
+                            "Vue.js": "vuejs",
+                            "Astro": "astro",
+                            "JSX": "javascriptreact"
+                        },
+                        "code_action_kinds": null
+                    }
+                },
+                "context_servers": {},
+                "slash_commands": {},
+                "snippets": null,
+                "capabilities": []
+            },
+            "dev": false
+        },
+        "prisma": {
+            "manifest": {
+                "id": "prisma",
+                "name": "Prisma",
+                "version": "0.1.9",
+                "schema_version": 1,
+                "description": "Prisma support.",
+                "repository": "https://github.com/zed-extensions/prisma",
+                "authors": [
+                    "Matthew Gramigna <matthewgramigna@gmail.com>",
+                    "Victor Quiroz <git@victorhqc.com>"
+                ],
+                "lib": {
+                    "kind": "Rust",
+                    "version": "0.7.0"
+                },
+                "themes": [],
+                "icon_themes": [],
+                "languages": ["languages/prisma"],
+                "grammars": {
+                    "prisma": {
+                        "repository": "https://github.com/victorhqc/tree-sitter-prisma",
+                        "rev": "3556b2c1f20ec9ac91e92d32c43d9d2a0ca3cc49",
+                        "path": null
+                    }
+                },
+                "language_servers": {
+                    "prisma-language-server": {
+                        "language": "Prisma",
+                        "languages": [],
+                        "language_ids": {},
+                        "code_action_kinds": null
+                    }
+                },
+                "context_servers": {},
+                "slash_commands": {},
+                "snippets": null,
+                "capabilities": []
+            },
+            "dev": false
+        },
+        "proto": {
+            "manifest": {
+                "id": "proto",
+                "name": "Proto",
+                "version": "0.3.3",
+                "schema_version": 1,
+                "description": "Protocol Buffers support.",
+                "repository": "https://github.com/zed-industries/zed",
+                "authors": ["Zed Industries <support@zed.dev>"],
+                "lib": {
+                    "kind": "Rust",
+                    "version": "0.7.0"
+                },
+                "themes": [],
+                "icon_themes": [],
+                "languages": ["languages/proto"],
+                "grammars": {
+                    "proto": {
+                        "repository": "https://github.com/coder3101/tree-sitter-proto",
+                        "rev": "a6caac94b5aa36b322b5b70040d5b67132f109d0",
+                        "path": null
+                    }
+                },
+                "language_servers": {
+                    "buf": {
+                        "language": null,
+                        "languages": ["Proto"],
+                        "language_ids": {},
+                        "code_action_kinds": null
+                    },
+                    "protobuf-language-server": {
+                        "language": null,
+                        "languages": ["Proto"],
+                        "language_ids": {},
+                        "code_action_kinds": null
+                    },
+                    "protols": {
+                        "language": null,
+                        "languages": ["Proto"],
+                        "language_ids": {},
+                        "code_action_kinds": null
+                    }
+                },
+                "context_servers": {},
+                "slash_commands": {},
+                "snippets": null,
+                "capabilities": []
+            },
+            "dev": false
+        },
+        "scss": {
+            "manifest": {
+                "id": "scss",
+                "name": "SCSS & SASS",
+                "version": "0.2.1",
+                "schema_version": 1,
+                "description": "SCSS and SASS support",
+                "repository": "https://github.com/bajrangCoder/zed-scss",
+                "authors": ["Raunak Raj <bajrangcoders@gmail.com>"],
+                "lib": {
+                    "kind": "Rust",
+                    "version": "0.7.0"
+                },
+                "themes": [],
+                "icon_themes": [],
+                "languages": [
+                    "languages/sassdoc",
+                    "languages/sass",
+                    "languages/scss"
+                ],
+                "grammars": {
+                    "sass": {
+                        "repository": "https://github.com/bajrangCoder/tree-sitter-sass",
+                        "rev": "fb280c41b070657e4ff4d4e5e6eea6cb19efd9b8",
+                        "path": null
+                    },
+                    "sassdoc": {
+                        "repository": "https://github.com/simeonoff/tree-sitter-sassdoc",
+                        "rev": "38abe86eac15ed8d668de04df963ef0a4c220cfe",
+                        "path": null
+                    },
+                    "scss": {
+                        "repository": "https://github.com/simeonoff/tree-sitter-scss",
+                        "rev": "3f918284a73a54b53e4f326b0aa8c74ccbf4ee4d",
+                        "path": null
+                    }
+                },
+                "language_servers": {
+                    "scss-lsp": {
+                        "language": null,
+                        "languages": ["SCSS"],
+                        "language_ids": {},
+                        "code_action_kinds": null
+                    },
+                    "some-sass-lsp": {
+                        "language": null,
+                        "languages": ["SCSS", "SASS"],
+                        "language_ids": {
+                            "SCSS": "scss",
+                            "SASS": "sass"
+                        },
+                        "code_action_kinds": null
+                    }
+                },
+                "context_servers": {},
+                "slash_commands": {},
+                "snippets": null,
+                "capabilities": []
+            },
+            "dev": false
+        },
+        "svelte": {
+            "manifest": {
+                "id": "svelte",
+                "name": "Svelte",
+                "version": "0.2.11",
+                "schema_version": 1,
+                "description": "Svelte support",
+                "repository": "https://github.com/zed-extensions/svelte",
+                "authors": ["Zed Industries <support@zed.dev>"],
+                "lib": {
+                    "kind": "Rust",
+                    "version": "0.7.0"
+                },
+                "themes": [],
+                "icon_themes": [],
+                "languages": ["languages/svelte"],
+                "grammars": {
+                    "svelte": {
+                        "repository": "https://github.com/tree-sitter-grammars/tree-sitter-svelte",
+                        "rev": "3f06f705410683adb17d146b5eca28c62fe81ba6",
+                        "path": null
+                    }
+                },
+                "language_servers": {
+                    "svelte-language-server": {
+                        "language": "Svelte",
+                        "languages": [],
+                        "language_ids": {},
+                        "code_action_kinds": null
+                    }
+                },
+                "context_servers": {},
+                "slash_commands": {},
+                "snippets": null,
+                "capabilities": []
+            },
+            "dev": false
+        }
+    },
+    "themes": {
+        "GitHub Dark": {
+            "extension": "github-theme",
+            "path": "themes/github_theme.json"
+        },
+        "GitHub Dark Colorblind": {
+            "extension": "github-theme",
+            "path": "themes/github_theme.json"
+        },
+        "GitHub Dark Dimmed": {
+            "extension": "github-theme",
+            "path": "themes/github_theme.json"
+        },
+        "GitHub Dark High Contrast": {
+            "extension": "github-theme",
+            "path": "themes/github_theme.json"
+        },
+        "GitHub Dark Tritanopia": {
+            "extension": "github-theme",
+            "path": "themes/github_theme.json"
+        },
+        "GitHub Light": {
+            "extension": "github-theme",
+            "path": "themes/github_theme.json"
+        },
+        "GitHub Light Colorblind": {
+            "extension": "github-theme",
+            "path": "themes/github_theme.json"
+        },
+        "GitHub Light High Contrast": {
+            "extension": "github-theme",
+            "path": "themes/github_theme.json"
+        },
+        "GitHub Light Tritanopia": {
+            "extension": "github-theme",
+            "path": "themes/github_theme.json"
+        }
+    },
+    "icon_themes": {
+        "Material Icon Theme": {
+            "extension": "material-icon-theme",
+            "path": "icon_themes/material-icon-theme.json"
+        }
+    },
+    "languages": {
+        "C# Project File": {
+            "extension": "csharp",
+            "path": "languages/csproj",
+            "matcher": {
+                "path_suffixes": ["csproj"],
+                "first_line_pattern": null,
+                "modeline_aliases": []
+            },
+            "hidden": false,
+            "grammar": "xml"
+        },
+        "C# Solution File": {
+            "extension": "csharp",
+            "path": "languages/slnx",
+            "matcher": {
+                "path_suffixes": ["slnx"],
+                "first_line_pattern": null,
+                "modeline_aliases": []
+            },
+            "hidden": false,
+            "grammar": "xml"
+        },
+        "CSharp": {
+            "extension": "csharp",
+            "path": "languages/csharp",
+            "matcher": {
+                "path_suffixes": ["cs"],
+                "first_line_pattern": null,
+                "modeline_aliases": []
+            },
+            "hidden": false,
+            "grammar": "c_sharp"
+        },
+        "Dockerfile": {
+            "extension": "dockerfile",
+            "path": "languages/dockerfile",
+            "matcher": {
+                "path_suffixes": ["Dockerfile", "Containerfile", "dockerfile"],
+                "first_line_pattern": null,
+                "modeline_aliases": []
+            },
+            "hidden": false,
+            "grammar": "dockerfile"
+        },
+        "Editorconfig": {
+            "extension": "editorconfig",
+            "path": "languages/editorconfig",
+            "matcher": {
+                "path_suffixes": ["editorconfig"],
+                "first_line_pattern": null,
+                "modeline_aliases": []
+            },
+            "hidden": false,
+            "grammar": "editorconfig"
+        },
+        "EmmyLuadoc": {
+            "extension": "lua",
+            "path": "languages/emmyluadoc",
+            "matcher": {
+                "path_suffixes": [],
+                "first_line_pattern": null,
+                "modeline_aliases": []
+            },
+            "hidden": true,
+            "grammar": "emmyluadoc"
+        },
+        "Git Attributes": {
+            "extension": "git-firefly",
+            "path": "languages/gitattributes",
+            "matcher": {
+                "path_suffixes": ["gitattributes", ".gitattributes"],
+                "first_line_pattern": null,
+                "modeline_aliases": ["gitattributes"]
+            },
+            "hidden": false,
+            "grammar": "gitattributes"
+        },
+        "Git Config": {
+            "extension": "git-firefly",
+            "path": "languages/gitconfig",
+            "matcher": {
+                "path_suffixes": [
+                    "config.worktree",
+                    ".gitconfig",
+                    ".gitmodules",
+                    ".lfsconfig"
+                ],
+                "first_line_pattern": null,
+                "modeline_aliases": ["gitconfig"]
+            },
+            "hidden": false,
+            "grammar": "git_config"
+        },
+        "Git Ignore": {
+            "extension": "git-firefly",
+            "path": "languages/gitignore",
+            "matcher": {
+                "path_suffixes": [
+                    ".containerignore",
+                    ".cursorignore",
+                    ".dockerignore",
+                    ".eslintignore",
+                    ".fdignore",
+                    ".gitignore",
+                    ".gitignore_global",
+                    ".git-blame-ignore-revs",
+                    ".ignore",
+                    ".npmignore",
+                    ".prettierignore",
+                    ".rgignore",
+                    ".vscodeignore"
+                ],
+                "first_line_pattern": null,
+                "modeline_aliases": ["gitignore"]
+            },
+            "hidden": false,
+            "grammar": "gitignore"
+        },
+        "Git Rebase": {
+            "extension": "git-firefly",
+            "path": "languages/gitrebase",
+            "matcher": {
+                "path_suffixes": ["git-rebase-todo"],
+                "first_line_pattern": null,
+                "modeline_aliases": ["gitrebase"]
+            },
+            "hidden": false,
+            "grammar": "git_rebase"
+        },
+        "HTML": {
+            "extension": "html",
+            "path": "languages/html",
+            "matcher": {
+                "path_suffixes": ["html", "htm", "shtml"],
+                "first_line_pattern": null,
+                "modeline_aliases": []
+            },
+            "hidden": false,
+            "grammar": "html"
+        },
+        "Lua": {
+            "extension": "lua",
+            "path": "languages/lua",
+            "matcher": {
+                "path_suffixes": ["lua"],
+                "first_line_pattern": null,
+                "modeline_aliases": []
+            },
+            "hidden": false,
+            "grammar": "lua"
+        },
+        "Luau": {
+            "extension": "luau",
+            "path": "languages/luau",
+            "matcher": {
+                "path_suffixes": ["luau"],
+                "first_line_pattern": "^#!.*\b(lune|luau|zune)\b",
+                "modeline_aliases": []
+            },
+            "hidden": false,
+            "grammar": "luau"
+        },
+        "MSBuild File": {
+            "extension": "csharp",
+            "path": "languages/msbuild",
+            "matcher": {
+                "path_suffixes": ["proj", "props", "targets"],
+                "first_line_pattern": null,
+                "modeline_aliases": []
+            },
+            "hidden": false,
+            "grammar": "xml"
+        },
+        "Prisma": {
+            "extension": "prisma",
+            "path": "languages/prisma",
+            "matcher": {
+                "path_suffixes": ["prisma"],
+                "first_line_pattern": null,
+                "modeline_aliases": []
+            },
+            "hidden": false,
+            "grammar": "prisma"
+        },
+        "Proto": {
+            "extension": "proto",
+            "path": "languages/proto",
+            "matcher": {
+                "path_suffixes": ["proto"],
+                "first_line_pattern": null,
+                "modeline_aliases": []
+            },
+            "hidden": false,
+            "grammar": "proto"
+        },
+        "SASS": {
+            "extension": "scss",
+            "path": "languages/sass",
+            "matcher": {
+                "path_suffixes": ["sass"],
+                "first_line_pattern": null,
+                "modeline_aliases": []
+            },
+            "hidden": false,
+            "grammar": "sass"
+        },
+        "SCSS": {
+            "extension": "scss",
+            "path": "languages/scss",
+            "matcher": {
+                "path_suffixes": ["scss"],
+                "first_line_pattern": null,
+                "modeline_aliases": []
+            },
+            "hidden": false,
+            "grammar": "scss"
+        },
+        "SassDoc": {
+            "extension": "scss",
+            "path": "languages/sassdoc",
+            "matcher": {
+                "path_suffixes": [],
+                "first_line_pattern": null,
+                "modeline_aliases": []
+            },
+            "hidden": true,
+            "grammar": "sassdoc"
+        },
+        "Svelte": {
+            "extension": "svelte",
+            "path": "languages/svelte",
+            "matcher": {
+                "path_suffixes": ["svelte"],
+                "first_line_pattern": null,
+                "modeline_aliases": []
+            },
+            "hidden": false,
+            "grammar": "svelte"
+        }
+    }
+}
