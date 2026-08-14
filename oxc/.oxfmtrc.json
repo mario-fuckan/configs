@@ -4,5 +4,6 @@
     "semi": false,
     "singleQuote": false,
     "insertFinalNewline": false,
-    "svelte": true
+    "svelte": true,
+    "trailingComma": "none"
 }
