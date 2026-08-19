@@ -86,6 +86,13 @@
                 },
             },
         },
+        "JSON": {
+            "formatter": {
+                "language_server": {
+                    "name": "oxfmt",
+                },
+            },
+        },
     },
     "lsp": {
         "csharp-ls": {
